@@ -47,6 +47,10 @@ where
         &self.state
     }
     #[inline]
+    pub fn state_mut(&mut self) -> &mut OVector<R, SS> {
+        &mut self.state
+    }
+    #[inline]
     pub fn covariance(&self) -> &OMatrix<R, SS, SS> {
         &self.covariance
     }
